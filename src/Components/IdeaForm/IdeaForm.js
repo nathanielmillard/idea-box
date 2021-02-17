@@ -18,6 +18,7 @@ class IdeaForm extends Component {
   saveIdea = (e) => {
     e.preventDefault()
     this.props.addIdea({[this.state.title]: this.state.body})
+    e.target.parentElement.reset()
   }
   render(){
     return (
@@ -38,7 +39,7 @@ class IdeaForm extends Component {
               onChange={this.updateForm}
               />
           </label>
-          <button className='saveButton' onClick={this.saveIdea}> Save </button>
+          <button className='saveButton' type='submit' onClick={this.saveIdea}> Save </button>
         </form>
         <form className='searchForm'>
           <input />
