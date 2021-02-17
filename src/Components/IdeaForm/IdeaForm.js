@@ -5,9 +5,14 @@ class IdeaForm extends Component {
   constructor(props){
     super(props);
     this.state = {
-      this.title = '',
-      this.body = ''
+      title: '',
+      body: ''
     }
+  }
+  updateForm = (e) => {
+    let type = e.target.className
+    let value = e.target.value
+    this.setState({[type]: value })
   }
   render(){
     return (
@@ -15,11 +20,18 @@ class IdeaForm extends Component {
         <form className='ideaForm'>
           <label>
             Title
-            <input type='text'/>
+            <input
+              className='title'
+              type='text'
+              onChange={this.updateForm}
+              />
           </label>
           <label>
             Body
-            <textarea />
+            <textarea
+              className='body'
+              onChange={this.updateForm}
+              />
           </label>
           <button className='saveButton'> Save </button>
         </form>
