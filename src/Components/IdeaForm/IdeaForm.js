@@ -15,7 +15,8 @@ class IdeaForm extends Component {
     let value = e.target.value
     this.setState({[type]: value })
   }
-  saveIdea = () => {
+  saveIdea = (e) => {
+    e.preventDefault()
     this.props.addIdea({[this.state.title]: this.state.body})
   }
   render(){

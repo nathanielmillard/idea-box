@@ -1,16 +1,30 @@
 import './App.css';
+import {Component} from 'react'
 import ControlBar from '../ControlBar/ControlBar.js'
 import IdeaForm from '../IdeaForm/IdeaForm.js'
 import CardArea from '../CardArea/CardArea.js'
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      allIdeas: []
+    }
+  }
+  addIdea = (idea) => {
+    let ideas = this.state.allIdeas
+    ideas.push(idea)
+    this.setState({allIdeas: ideas})
+  }
+  render(){
+    return (
+      <div className="App">
       <ControlBar />
-      <IdeaForm />
+      <IdeaForm addIdea={this.addIdea}/>
       <CardArea />
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
