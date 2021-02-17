@@ -17,7 +17,7 @@ class IdeaForm extends Component {
   }
   saveIdea = (e) => {
     e.preventDefault()
-    this.props.addIdea({[this.state.title]: this.state.body})
+    this.props.addIdea({title: this.state.title, body: this.state.body})
     e.target.parentElement.reset()
   }
   render(){
