@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App">
       <ControlBar />
       <IdeaForm addIdea={this.addIdea}/>
-      <CardArea />
+      <CardArea cards={this.state.allIdeas} />
       </div>
     );
   }
