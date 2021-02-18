@@ -7,15 +7,17 @@ import commentButton from '../../icons/comment.svg';
 function IdeaCard(props) {
   return (
     <article className="IdeaCard">
-      <header>
-        <button><img src={star} /></button>
-        <button><img src={deleteButton} /></button>
+      <header className="cardHeader">
+        <button className='cardButton'><img src={star} /></button>
+        <button className='cardButton'><img src={deleteButton} /></button>
       </header>
-        <h1>{props.title}</h1>
+      <section className="cardBody">
+        <h3>{props.title}</h3>
         <p>{props.body}</p>
-      <footer>
-        <button><img src={commentButton} /></button>
-        Comment
+      </section>
+      <footer className="cardFooter">
+        <button className='footerButton'><img src={commentButton} /></button>
+        <h4>Comment</h4>
       </footer>
     </article>
   );
