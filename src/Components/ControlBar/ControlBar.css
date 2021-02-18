@@ -1,0 +1,41 @@
+.ControlBar {
+  height: 100vh;
+  width: 20vw;
+  background-color: #1f1f3d;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+h1 {
+  color: #e9e9f3;
+  font-size: 1.2rem;
+  margin: 1vh 1vw 1vh 1vw;
+}
+
+h2 {
+  color: #bfbfdd;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 1vh 1vw 1vh 1vw;
+}
+
+.filter-area {
+  border: 2px solid #353567;
+  border-left: none;
+  border-right: none;
+}
+
+.filter-button{
+  border: 1px solid #353567;
+  border-radius: 5px;
+  background-color: #5356a4;
+  color: #e9e9f3;
+  padding: .2rem;
+  align-self: center;
+  font-size: 1.2rem;
+  min-height: 5vh;
+  width: 15vw;
+  margin: 1vh 2.5vw 1vh 2.5vw;
+}

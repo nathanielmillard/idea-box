@@ -1,6 +1,7 @@
 import './IdeaForm.css';
 import {Component} from 'react'
 import PropTypes from 'prop-types'
+import searchIcon from '../../icons/search.svg'
 
 class IdeaForm extends Component {
   constructor(props){
@@ -42,10 +43,10 @@ class IdeaForm extends Component {
           <button className='saveButton' type='submit' onClick={this.saveIdea}> Save </button>
         </form>
         <form className='searchForm'>
-          <input />
           <button className='searchButton'>
-            <img />
+            <img src={searchIcon}/>
           </button>
+          <input className='search' type='text' />
         </form>
       </div>
     );

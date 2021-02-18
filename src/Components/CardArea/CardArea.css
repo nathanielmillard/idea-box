@@ -1,0 +1,9 @@
+.CardArea {
+  background-color: #eaeaf4;
+  height: 56vh;
+  overflow: scroll;
+  padding: 2vh 1vh 2vh 1vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

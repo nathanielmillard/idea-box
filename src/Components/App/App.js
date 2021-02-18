@@ -20,8 +20,10 @@ class App extends Component {
     return (
       <div className="App">
       <ControlBar />
-      <IdeaForm addIdea={this.addIdea}/>
-      <CardArea cards={this.state.allIdeas} />
+      <main>
+        <IdeaForm addIdea={this.addIdea}/>
+        <CardArea cards={this.state.allIdeas} />
+      </main>
       </div>
     );
   }
