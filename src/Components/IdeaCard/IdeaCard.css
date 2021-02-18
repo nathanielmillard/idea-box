@@ -1,0 +1,57 @@
+.IdeaCard {
+  height: 30vh;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1f1f3d;
+  margin: 0 1vh 1vh 1vh;
+}
+
+.cardButton {
+  height: 3vh;
+  width: 3vh;
+  background-color: #1f1f3d;
+  border: none;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 22vw;
+  height: 3vh;
+  background-color: #1f1f3d;
+}
+
+.cardBody {
+  height: 24vh;
+  padding: 1rem;
+}
+
+p {
+  margin-top: .5rem;
+  font-weight: lighter;
+  overflow: scroll;
+}
+
+h4 {
+  color: #eaeaf4;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.cardFooter {
+  width: 22vw;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #5356a4;
+}
+
+.footerButton {
+  height: 3vh;
+  width: 3vh;
+  border: none;
+  background-color: #5356a4;
+}
