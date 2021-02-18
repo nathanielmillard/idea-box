@@ -8,4 +8,4 @@ My goal is to recreate this app with styled components and React with react hook
 I am curious to see how dramatically the return of code quality and functionality on investment of time has changed as I have gorwn as a developer and when utilizing a framework like React to handle more modular functionality. 
 
 ##Time Tracker:
-So far I have spent 1 hour and 15 minutes on this project.
+So far I have spent 2 hour and 45 minutes on this project.
