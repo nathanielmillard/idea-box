@@ -34,8 +34,8 @@ h2 {
   color: #e9e9f3;
   padding: .2rem;
   align-self: center;
-  font-size: 2rem;
-  height: 5vh;
+  font-size: 1.2rem;
+  min-height: 5vh;
   width: 15vw;
   margin: 1vh 2.5vw 1vh 2.5vw;
 }
